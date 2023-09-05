@@ -2,7 +2,12 @@
 
 Google Test 是谷歌开发并维护的测试C++框架
 
+测试方法：
 单元测试 - 以函数、类为单位进行独立测试
+集成测试 - 多个组件组合起来进行测试
+黑盒测试 - 不关注代码内部逻辑，只关注功能的测试
+白盒测试 - 需要关注代码内部逻辑的测试，单元测试属于白盒测试
+验收测试 - 交付给用户之前的测试，符合用户需求
 
 ASSERT 与 EXPECT 区别：ASSERT 出错会停止运行，而 EXPECT 出错会继续执行后续逻辑
 常见如（ASSERT_EQ ASSERT_NE ASSERT_GT ASSERT_LT(val1, val2)），(EXPECT_TRUE EXPECT_FALSE(condition))
